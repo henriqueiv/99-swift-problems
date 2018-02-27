@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print(List(1, 1, 2, 3, 5, 8)!.reverse())
     }
 
     override func didReceiveMemoryWarning() {
