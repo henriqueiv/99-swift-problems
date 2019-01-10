@@ -107,7 +107,6 @@ class List<T> {
         }
         let reversedArray = Array<T>(array.reversed())
         return List(reversedArray)!
-        
     }
     
     /** P07 (**) Flatten a nested linked list structure.
@@ -141,7 +140,6 @@ class List<T> {
 
 extension List where T: Equatable {
     static func ==(lhs: List, rhs: List) -> Bool {
-        // To decrease complexity we use this variable
         let length = lhs.length
         guard length == rhs.length else {
             return false
@@ -206,4 +204,3 @@ extension List where T: Equatable {
         return List.init(array)!
     }
 }
-
